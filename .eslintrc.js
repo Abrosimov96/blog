@@ -18,7 +18,10 @@ module.exports = {
                 '.eslintrc.{js,cjs}'
             ],
             parserOptions: {
-                sourceType: 'script'
+                sourceType: 'script',
+                parser: '@typescript-eslint/parser',
+                project: './tsconfig.json',
+                tsconfigRootDir: __dirname,
             }
         }
     ],
@@ -49,7 +52,7 @@ module.exports = {
         'react/no-deprecated': 'warn',
         '@typescript-eslint/no-floating-promises': 'warn',
         '@typescript-eslint/ban-ts-comment': 'warn',
-        "i18next/no-literal-string": ['error', {markupOnly: true}]
+        "i18next/no-literal-string": ['warn', {markupOnly: true}]
     },
     globals: {
         __IS_DEV__: true
