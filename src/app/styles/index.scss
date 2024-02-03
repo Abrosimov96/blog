@@ -3,20 +3,18 @@
 @import "themes/normal";
 @import "themes/dark";
 
-.app{
-  font: var(--font-m);
-
-  background: var(--bg-color);
-  color: var(--primary-color);
-
-  min-height: 100vh;
+.app {
+    font: var(--font-m);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
 }
 
 .contentPage {
-  display: flex;
+    display: flex;
 }
 
 .wrapperPage {
-  flex-grow: 1;
-  padding: 20px;
+    flex-grow: 1;
+    padding: 20px;
 }
